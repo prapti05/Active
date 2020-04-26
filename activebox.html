@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activebox</title>
+    <link rel="stylesheet" href="activebox.css">
+    <style media="screen">
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+    .menu{
+      height: 500px;
+      margin:10px;
+      background-image:url("menu3.jpg");
+    }
+    .column h2{
+
+    font-family: 'Dancing Script'
+
+    }
+     .column {
+       margin-top: 50px;
+margin-bottom: 100px;
+      float: left;
+      width: 50%;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 800px) {
+  .image-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .image-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.container{
+  style="text-align:center;
+   font-family:'Dancing Script';
+   background-image:url("menu1.jpg");
+   height:300px;
+   font-size:30px;
+}
+.container h1{
+  margin-top: 40px;
+}
+.fa fa-map-marker i{
+  font-size:30px;
+  margin-top:50px;
+  text-align:center;
+}
+    </style>
+    </head>
+  <body >
+    <div class="header">
+
+      <div class="topnav">
+    <a class="active" href="#">HOME</a>
+      <a href="#menu">MENU</a>
+      <a href="#about">ABOUT</a>
+      <a href="#where">CONTACT</a>
+      <input type="text" placeholder="Search menu">
+</div>
+</div>
+<div class="topsec" style="background-image:url('tgi.jpg.jpg'); height:500px;" id="home">
+
+  <div class="display center">
+    <h1 class="text-white" style="font-size:140px; color:white; text-align:center;font-family: 'Dancing Script';">Active<br>box</h1>
+  </div>
+  <p style="font-size:40px; font-style:italic;color:white;padding-top:20px"><strong>Opening hours:</strong> everyday from 6am to 5pm.
+   .<br></p><p style="font-size:40px; font-style:italic;color:white;float:right"><strong>Address:</strong> 15 Adr street, 5015, NY<br></p>
+</div>
+<div class="menu">
+<div class="row">
+  <div class="column">
+  <h2 style="text-align:center; font-size:30px;">PIZZA</h2>
+  <p style="font-style:italic;font-size:30px;text-align:center;">We serve large varieties of pizza's in all sizes. Our specialaties are 4-cheese, farmhouse, parma(hott) and chicken.</p>
+  </div>
+  <div class="column">
+    <h2 style="text-align:center;font-size:30px;">SALADS</h2>
+    <p style="font-style:italic;font-size:30px;text-align:center;">We have Lasgna, Ravioli, Spaghetti and Seafood-pasta.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <h2 style="text-align:center;font-size:30px;">STARTERS</h2>
+    <p style="font-style:italic;font-size:30px;text-align:center;">We have Bruschetta, Garlic bread and Soups.</p>
+  </div>
+  <div class="column">
+    <h2 style="text-align:center;font-size:30px;">DRINKS</h2>
+    <p style="font-style:italic; font-size:30px;text-align:center;">Coffee, Chocolatto, Iced-coffee and soda of you choice.</p>
+  </div>
+</div>
+</div>
+<div class="image-gallery">
+<img src="italian.jpg" width="440px" height="300px">
+<img src="main.jpg" width="440px" height="300px">
+<img src="Cannoli.jpg" width="440px" height="300px">
+<img src="main1.jpg" width="440px" height="300px">
+<img src="Italian food.jpg" width="440px" height="300px">
+<img src="lasagna.jpg" width="440px" height="300px">
+<img src="pizza.jpg" width="440px" height="300px">
+<img src="pasta.jpg" width="440px" height="300px">
+</div>
+<form action="action_page.php">
+  <div class="container" >
+    <h1 style="text-align:center; font-size:60px; color:darkgreen;">Want to reserve your seats?</h1>
+    <p style="text-align:center; font-size:30px; color:darkgreen;">Please fill in this form.</p>
+    <hr>
+
+    <label for="Full-name"><b>Enter your full name</b></label>
+    <input type="text" placeholder="Full name" name="email" required>
+
+    <label for="people"><b>Enter number of persons</b></label>
+    <input type="text" placeholder="Enter persons" name="psw" required>
+
+    <label for="time" font-family: 'Dancing Script'><b>Enter your time of arrival</b></label>
+    <input type="text" placeholder="time"name="psw-repeat" required>
+    <hr>
+
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+
+
+</form>
+<div class="footer" style="height:200px; background-color:black; color:white">
+  <p style="font-size:30px;margin-left:30px;">Activebox</p>
+  <p style="font-size:20px;margin-left:30px;">EXplore food with us.</p>
+
+        <div class="footer-center">
+				<div>
+
+					  <p style="font-size:20px;margin-left:30px;"><span>15, Adr street</span>
+						5015,NY</p>
+				</div>
+  <div class="footerContainer" style="font-size:30px;margin-top:50px;text-align:center;">
+        <p class="copyright">© Activebox 2020</p>
+    </div>
+</div>
+
+
+  </body>
+</html>
